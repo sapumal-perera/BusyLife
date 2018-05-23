@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.emperia.isurup.busylife.Create">
+
+
+    <TextView
+        android:background="#6FD300"
+        android:text="   Add an Event!"
+        android:textSize="23sp"
+        android:textColor="#17058A"
+        android:layout_width="412dp"
+        android:textStyle="bold"
+        android:layout_height="59dp"
+        android:id="@+id/textView5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        android:layout_marginEnd="8dp" />
+
+
+    <TextView
+        android:textColor="#740EB2"
+        android:id="@+id/textView"
+        android:layout_width="370dp"
+        android:layout_height="32dp"
+        android:text="TITLE"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/titleedit"
+
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintVertical_bias="1.0"
+        android:gravity="center"
+        android:layout_marginStart="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+    <TextView
+        android:textColor="#740EB2"
+        android:layout_width="370dp"
+        android:layout_height="32dp"
+        android:text="TIME"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        android:id="@+id/textView3"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.004"
+        app:layout_constraintBottom_toTopOf="@+id/timeedit"
+        android:layout_marginBottom="-9dp" />
+
+    <TextView
+        android:textColor="#740EB2"
+        android:id="@+id/textView2"
+        android:layout_width="370dp"
+        android:layout_height="32dp"
+        android:text="DETAILS"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/timeedit"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="7dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp" />
+
+
+    <EditText
+        android:textColor="#17058A"
+        android:layout_width="353dp"
+        android:layout_height="49dp"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:background="@drawable/border_main"
+        android:id="@+id/titleedit"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintHorizontal_bias="0.533" />
+
+
+    <EditText
+        android:textColor="#17058A"
+        android:maxHeight="120dp"
+        android:layout_width="361dp"
+        android:layout_height="56dp"
+        android:id="@+id/editdetail"
+        android:background="@drawable/border_main"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:textStyle="italic"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/editdetail"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/thesaurusbtn2"
+        android:text="Theasurus"
+        android:background="#4D5656"
+        android:textColor="#F7F9F9"
+        android:layout_marginStart="33dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintLeft_toRightOf="@+id/textView2"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+    <TimePicker
+        android:background="#A2B4CC"
+        android:numbersTextColor="#00BFA5"
+        android:id="@+id/timeedit"
+        android:layout_width="344dp"
+        android:layout_height="126dp"
+        android:timePickerMode="spinner"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="52dp"
+        app:layout_constraintTop_toBottomOf="@+id/titleedit"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/thesaurustext"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Thesaurus button is for suggest synonyms "
+        android:textAlignment="center"
+        android:textColor="#105803"
+        android:layout_marginTop="38dp"
+        app:layout_constraintTop_toBottomOf="@+id/thesaurusWord"
+        android:layout_marginLeft="-16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:id="@+id/savebtn"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Save"
+        android:textStyle="bold"
+        android:background="#3AEF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="-50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+    <EditText
+        android:layout_width="361dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="46dp"
+        app:layout_constraintTop_toBottomOf="@+id/editdetail"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/editdetail"
+        app:layout_constraintRight_toRightOf="@+id/editdetail"
+        app:layout_constraintHorizontal_bias="0.888"
+        android:textColorHint="#9C3FF3"
+        android:hint=" type a single word and click thesaurus for .."
+        android:textColor="#17058A"
+        android:textSize="10sp"
+        android:layout_marginStart="8dp"
+        android:id="@+id/thesaurusWord"
+        android:background="@drawable/border_style" />
+    <Button
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/thesaurusWord"
+        android:layout_width="wrap_content"
+        android:textColor="#9009E2"
+        android:layout_height="30dp"
+        android:id="@+id/thesaurusbtn"
+        android:text="Theasurus"
+        android:layout_marginEnd="31dp"
+        android:background="@drawable/border_style"
+        tools:layout_editor_absoluteY="448dp"
+        tools:layout_editor_absoluteX="266dp" />
+
+
+
+</android.support.constraint.ConstraintLayout>

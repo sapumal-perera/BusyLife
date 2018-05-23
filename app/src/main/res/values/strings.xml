@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BusyLife</string>
+    <string name="find_your_event_easier">Find your event easier..</string>
+    <string name="enterIdtoView">Please enter the ID  of the appointment to VIEW or EDIT the appointment</string>
+    <string name="enterIdtoDel">Please enter the ID  of the appointment to DELETE the appointment</string>
+    <string name="enterIdtoMove">Please enter the ID  of the appointment to MOVE the appointment</string>
+    <string name="plsSelectApp">PLEASE SELECT A APPOINTMENT BEFORE CLICK THE BUTTON</string>
+
+
+</resources>
